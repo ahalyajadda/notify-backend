@@ -12,7 +12,9 @@ const userRouter = require("./routers/user-routers.js");
 
 const app = express();
 
-
+app.get('/',(req,res)=>{
+    res.send("hello");
+})
 app.use((req, res, next) => {
     res.set("Access-Control-Allow-Origin", "*");
     res.set("Access-Control-Allow-Headers", "*");
