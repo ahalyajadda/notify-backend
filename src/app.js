@@ -5,7 +5,6 @@ const dotenv=require("dotenv");
 dotenv.config();
 const cors=require("cors")
 ;
-require("./db/mongoose.js");
 
 const noteRouter = require("./routers/note-routers.js");
 const userRouter = require("./routers/user-routers.js");
